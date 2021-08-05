@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ScrollViewPanner
 //
-//  Created by Jeff Campbell on 8/5/21.
+//  Created by Don Mag on 8/5/21.
 //
 
 import UIKit
