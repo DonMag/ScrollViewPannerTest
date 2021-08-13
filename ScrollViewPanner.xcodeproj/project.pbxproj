@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC29864126C408EE00733738 /* PanPlusVelocityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC29864026C408EE00733738 /* PanPlusVelocityView.swift */; };
+		FC29864426C4091300733738 /* LongPressPlusVelocityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC29864326C4091300733738 /* LongPressPlusVelocityView.swift */; };
+		FC29865026C463B700733738 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC29864F26C463B700733738 /* LaunchViewController.swift */; };
 		FC63021D26BC4E2D005A7F9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC63021C26BC4E2D005A7F9C /* AppDelegate.swift */; };
 		FC63021F26BC4E2D005A7F9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC63021E26BC4E2D005A7F9C /* SceneDelegate.swift */; };
 		FC63022126BC4E2D005A7F9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC63022026BC4E2D005A7F9C /* ViewController.swift */; };
@@ -15,9 +18,13 @@
 		FC63022926BC4E2E005A7F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC63022726BC4E2E005A7F9C /* LaunchScreen.storyboard */; };
 		FC63023326BC4E76005A7F9C /* SpecialDraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC63023126BC4E76005A7F9C /* SpecialDraggableView.swift */; };
 		FC63023426BC4E76005A7F9C /* DonMagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC63023226BC4E76005A7F9C /* DonMagViewController.swift */; };
+		FC63024D26BDAEB6005A7F9C /* VelocityTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC63024C26BDAEB6005A7F9C /* VelocityTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC29864026C408EE00733738 /* PanPlusVelocityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanPlusVelocityView.swift; sourceTree = "<group>"; };
+		FC29864326C4091300733738 /* LongPressPlusVelocityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressPlusVelocityView.swift; sourceTree = "<group>"; };
+		FC29864F26C463B700733738 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		FC63021926BC4E2D005A7F9C /* ScrollViewPanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewPanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC63021C26BC4E2D005A7F9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC63021E26BC4E2D005A7F9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +35,7 @@
 		FC63022A26BC4E2E005A7F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC63023126BC4E76005A7F9C /* SpecialDraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialDraggableView.swift; sourceTree = "<group>"; };
 		FC63023226BC4E76005A7F9C /* DonMagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonMagViewController.swift; sourceTree = "<group>"; };
+		FC63024C26BDAEB6005A7F9C /* VelocityTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelocityTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +70,14 @@
 			children = (
 				FC63021C26BC4E2D005A7F9C /* AppDelegate.swift */,
 				FC63021E26BC4E2D005A7F9C /* SceneDelegate.swift */,
+				FC29864F26C463B700733738 /* LaunchViewController.swift */,
 				FC63022026BC4E2D005A7F9C /* ViewController.swift */,
-				FC63022226BC4E2D005A7F9C /* Main.storyboard */,
 				FC63023226BC4E76005A7F9C /* DonMagViewController.swift */,
+				FC63024C26BDAEB6005A7F9C /* VelocityTestViewController.swift */,
+				FC29864026C408EE00733738 /* PanPlusVelocityView.swift */,
+				FC29864326C4091300733738 /* LongPressPlusVelocityView.swift */,
 				FC63023126BC4E76005A7F9C /* SpecialDraggableView.swift */,
+				FC63022226BC4E2D005A7F9C /* Main.storyboard */,
 				FC63022526BC4E2E005A7F9C /* Assets.xcassets */,
 				FC63022726BC4E2E005A7F9C /* LaunchScreen.storyboard */,
 				FC63022A26BC4E2E005A7F9C /* Info.plist */,
@@ -145,8 +157,12 @@
 			files = (
 				FC63022126BC4E2D005A7F9C /* ViewController.swift in Sources */,
 				FC63021D26BC4E2D005A7F9C /* AppDelegate.swift in Sources */,
+				FC63024D26BDAEB6005A7F9C /* VelocityTestViewController.swift in Sources */,
 				FC63023326BC4E76005A7F9C /* SpecialDraggableView.swift in Sources */,
+				FC29864426C4091300733738 /* LongPressPlusVelocityView.swift in Sources */,
 				FC63021F26BC4E2D005A7F9C /* SceneDelegate.swift in Sources */,
+				FC29864126C408EE00733738 /* PanPlusVelocityView.swift in Sources */,
+				FC29865026C463B700733738 /* LaunchViewController.swift in Sources */,
 				FC63023426BC4E76005A7F9C /* DonMagViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +240,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -279,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

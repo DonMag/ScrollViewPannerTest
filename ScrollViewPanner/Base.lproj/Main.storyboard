@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ij9-PS-EBt">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NQr-ue-eSD">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -11,16 +12,16 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollViewPannerTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollViewPanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btq-lI-tpy">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSi-Ei-g6N">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="818"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="623"/>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <color key="tintColor" systemColor="systemPurpleColor"/>
                                         <constraints>
@@ -28,10 +29,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BoF-Po-aux">
-                                        <rect key="frame" x="240" y="0.0" width="240" height="818"/>
+                                        <rect key="frame" x="240" y="0.0" width="240" height="623"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scroll View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1c-fD-r3j">
-                                                <rect key="frame" x="58.5" y="393" width="123" height="32"/>
+                                                <rect key="frame" x="58.5" y="295.5" width="123" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -45,7 +46,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIc-cV-KuL">
-                                        <rect key="frame" x="480" y="0.0" width="240" height="818"/>
+                                        <rect key="frame" x="480" y="0.0" width="240" height="623"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="a5Y-pR-S24"/>
@@ -84,6 +85,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="btq-lI-tpy" secondAttribute="trailing" id="lNy-RI-pZ9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Jl8-b3-SEc"/>
                     <connections>
                         <outlet property="panView" destination="4wf-ws-zZO" id="w54-IR-T1r"/>
                         <outlet property="scrollView1" destination="btq-lI-tpy" id="UQI-a0-BE7"/>
@@ -91,22 +93,146 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="112.5"/>
+            <point key="canvasLocation" x="-210" y="1187"/>
         </scene>
         <!--Don Mag View Controller-->
         <scene sceneID="TT6-LM-eBv">
             <objects>
-                <viewController id="Ij9-PS-EBt" customClass="DonMagViewController" customModule="ScrollViewPannerTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ij9-PS-EBt" customClass="DonMagViewController" customModule="ScrollViewPanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aVR-I1-wck">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="v4C-ZD-PMq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XP1-so-Dcq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GYJ-Hy-xYj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13" y="758"/>
+            <point key="canvasLocation" x="553" y="1187"/>
+        </scene>
+        <!--Velocity Test View Controller-->
+        <scene sceneID="4bE-NX-Y6o">
+            <objects>
+                <viewController id="ZQw-I9-QeA" customClass="VelocityTestViewController" customModule="ScrollViewPanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oGo-y1-huE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="c6b-MC-564"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3zf-eg-Nzi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5H-Rk-BGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="1187"/>
+        </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="Mqj-9k-VtN">
+            <objects>
+                <viewController id="XMZ-VV-MhD" customClass="LaunchViewController" customModule="ScrollViewPanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Td3-KY-CHJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="Pza-q6-p28">
+                                <rect key="frame" x="19" y="156" width="337.5" height="355"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9X6-HR-XOp">
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="58.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original View Controller" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d88-jc-v8I">
+                                                <rect key="frame" x="0.0" y="0.0" width="337.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRa-b0-4ao">
+                                                <rect key="frame" x="0.0" y="28.5" width="337.5" height="30"/>
+                                                <state key="normal" title="Launch"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="sof-pB-u6Z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jEX-5k-gqs">
+                                        <rect key="frame" x="0.0" y="87.5" width="337.5" height="99"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xR-Oe-vFU">
+                                                <rect key="frame" x="0.0" y="0.0" width="337.5" height="61"/>
+                                                <string key="text">Scroll View Controller using
+LongPressPlusVelocity
+custom views</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEA-KU-Ccg">
+                                                <rect key="frame" x="0.0" y="69" width="337.5" height="30"/>
+                                                <state key="normal" title="Launch"/>
+                                                <connections>
+                                                    <segue destination="Ij9-PS-EBt" kind="show" id="udP-UC-Nu0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K6R-R9-nRn">
+                                        <rect key="frame" x="0.0" y="215.5" width="337.5" height="139.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9K-SD-i7e">
+                                                <rect key="frame" x="0.0" y="0.0" width="337.5" height="101.5"/>
+                                                <string key="text">Velocity Test Controller using
+PanPlusVelocity
+custom view
+to compare Caclulated Velocity with PanGesture velocity property.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1u-1I-X2l">
+                                                <rect key="frame" x="0.0" y="109.5" width="337.5" height="30"/>
+                                                <state key="normal" title="Launch"/>
+                                                <connections>
+                                                    <segue destination="ZQw-I9-QeA" kind="show" id="i3n-sS-3ND"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NeT-QT-N57"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pza-q6-p28" firstAttribute="width" secondItem="NeT-QT-N57" secondAttribute="width" multiplier="0.9" id="WNw-0B-ZZM"/>
+                            <constraint firstItem="Pza-q6-p28" firstAttribute="centerX" secondItem="Td3-KY-CHJ" secondAttribute="centerX" id="dag-mw-ZRU"/>
+                            <constraint firstItem="Pza-q6-p28" firstAttribute="centerY" secondItem="Td3-KY-CHJ" secondAttribute="centerY" id="e5P-Tg-EIf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sa9-aI-j6P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xg6-vX-FKp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="417"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AzK-ug-NcP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NQr-ue-eSD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aaz-xD-qr5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XMZ-VV-MhD" kind="relationship" relationship="rootViewController" id="iTJ-9Q-ZZ8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCo-Fu-fiA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210" y="417"/>
         </scene>
     </scenes>
     <resources>

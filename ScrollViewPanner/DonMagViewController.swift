@@ -14,7 +14,7 @@ class DonMagViewController: UIViewController {
 		v.backgroundColor = .lightGray
 		return v
 	}()
-	
+
 	override func viewDidLoad() {
 		
 		super.viewDidLoad()
@@ -42,15 +42,20 @@ class DonMagViewController: UIViewController {
 		]
 		var x: CGFloat = 20.0
 		for i in 0..<colors.count {
-			let v = SpecialDraggableView()
+			//let v = SpecialDraggableView()
+			let v = LongPressPlusVelocityView()
 			v.backgroundColor = colors[i]
 			v.label.text = "\(i + 1)"
 			v.frame = CGRect(x: x, y: 200.0, width: 100.0, height: 100.0)
 			
+			v.shouldWiggle = false
+			v.shouldHighlight = true
+			v.longPressDuration = 0.3
+			
 			// closures
 			v.startCallback = { [weak self] view in
 				guard let self = self,
-					  let theView = view as? SpecialDraggableView,
+					  let theView = view as? LongPressPlusVelocityView,
 					  let vID = theView.label.text
 				else {
 					return
@@ -59,7 +64,7 @@ class DonMagViewController: UIViewController {
 			}
 			v.movedCallback = { [weak self] view in
 				guard let self = self,
-					  let theView = view as? SpecialDraggableView,
+					  let theView = view as? LongPressPlusVelocityView,
 					  let vID = theView.label.text
 				else {
 					return
@@ -68,13 +73,14 @@ class DonMagViewController: UIViewController {
 			}
 			v.endedCallback = { [weak self] view in
 				guard let self = self,
-					  let theView = view as? SpecialDraggableView,
+					  let theView = view as? LongPressPlusVelocityView,
 					  let vID = theView.label.text
 				else {
 					return
 				}
-				print("Stopped dragging view ID:", vID, "at:", theView.center)
+				print("Stopped dragging view ID:", vID, "at:", theView.center, "velocity:", theView.myVelocity)
 				self.updateContentSize()
+				self.title = String(format: "vX: %0.3f vY: %0.3f", theView.myVelocity.x, theView.myVelocity.y)
 			}
 			scrollView.addSubview(v)
 			x += 120.0
@@ -95,15 +101,4 @@ class DonMagViewController: UIViewController {
 		scrollView.contentSize = CGSize(width: w + 20.0, height: h + 20.0)
 	}
 
-
-	var isFirstTime: Bool = true
-	override func viewDidAppear(_ animated: Bool) {
-		super.viewDidAppear(animated)
-		if isFirstTime {
-			isFirstTime = false
-			let vc = UIAlertController(title: "Please Note!", message: "\nThis is EXAMPLE code!\n\nIt makes a lot of assumptions about the view hierarchy, and is intended to be a Starting Point Only and should not be considered\n\n\"Production Ready\"", preferredStyle: .alert)
-			vc.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-			present(vc, animated: true, completion: nil)
-		}
-	}
 }
